@@ -1,8 +1,7 @@
 
 
 ### INSTALL SCRIPT 
-<pre><code>apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://aio.tekirovpn.my.id/レスキセティワン.sh && chmod +x レスキセティワン.sh && ./レスキセティワン.sh
-</code></pre>
+apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/Jabarputra/autoscript/main/run.sh && chmod +x run.sh && ./run.sh
 
 
 
@@ -17,7 +16,7 @@
 - Penambahan fail2ban
 - Auto block sebagian ads indo by default
 - Auto clear log per 3 menit
-- Auto deler expired
+- Auto delet expired
 - User Details Akun
 
 ### PORT INFO
