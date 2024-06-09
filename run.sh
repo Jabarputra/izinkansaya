@@ -7,8 +7,8 @@
 # Dibuat Pada : 07-12-2023 ( ........ )
 # OS Support  : Ubuntu & Debian
 # Owner       : Tekiro & LynzXvA
-# Telegram    : https://t.me/jabar_putra
-# Github      : github.com/Jabarputra
+# Telegram    : https://t.me/LynzINFO
+# Github      : github.com/Ryuchiii
 # ═══════════════════════════════════════════════════════════════════
 
 apt install curl
@@ -49,7 +49,7 @@ LOGO() {
     echo -e " ───│    $Green┌─┐┬ ┬┌┬┐┌─┐┌─┐┌─┐┬─┐┬┌─┐┌┬┐  ┬  ┬┌┬┐┌─┐$NC   │───"
     echo -e " ───│    $Green├─┤│ │ │ │ │└─┐│  ├┬┘│├─┘ │   │  │ │ ├┤ $NC   │───"
     echo -e " ───│    $Green┴ ┴└─┘ ┴ └─┘└─┘└─┘┴└─┴┴   ┴   ┴─┘┴ ┴ └─┘$NC   │───"
-    echo -e "    │    ${YELLOW}Copyright${FONT} (C)${GRAY}https://t.me/tekiroorg$NC   │"
+    echo -e "    │    ${YELLOW}Copyright${FONT} (C)${GRAY}https://t.me/jabar_putra$NC   │"
     echo -e "    └───────────────────────────────────────────────┘"
     echo -e "         ${RED}Autoscript xray vpn lite (multi port)${FONT}    "
     echo -e "${RED}Make sure the internet is smooth when installing the script${FONT}"
@@ -68,10 +68,10 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To Tekiro Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Welcome To Jabar Putra Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e "     This Will Quick Setup VPN Server On Your Server"
-echo -e "         Auther : ${green}TekiroVpn ${NC}${YELLOW}(${NC} ${green}Jabarshop Project ${NC}${YELLOW})${NC}"
-echo -e "       © Lynz Project & Tekiro Project ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "         Auther : ${green}TekiroVpn ${NC}${YELLOW}(${NC} ${green}Jabar Putra ${NC}${YELLOW})${NC}"
+echo -e "       © Jabar Project & Jabar Putra ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -142,8 +142,8 @@ checking_sc() {
     echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "      \033[0;36mTelegram${NC} t.me/putra_sunda80"
-    echo -e "      ${GREEN}WhatsApp${NC} wa.me/083835753089"
+    echo -e "      \033[0;36mTelegram${NC} t.me/"
+    echo -e "      ${GREEN}WhatsApp${NC} wa.me/"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     exit
   fi
@@ -192,7 +192,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://aio.tekirovpn.my.id/"
+    REPO="https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/"
 
 ####
 start=$(date +%s)
@@ -376,13 +376,13 @@ function notif_bot() {
     KEY="6478027776:AAGBRpE2Scyqsf8gHhVPukhREmD4CmaYgEI"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
-    USRSC=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip | grep $ipsaya | awk '{print $2}')
-    EXPSC=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip | grep $ipsaya | awk '{print $3}')
+    USRSC=$(curl https://raw.githubusercontent.com/Nelih80/nyuk/main/ip | grep $ipsaya | awk '{print $2}')
+    EXPSC=$(curl https://raw.githubusercontent.com/Nelih80/nyuk/main/ip | grep $ipsaya | awk '{print $3}')
     TIMES=`date -d "0 days" +"%d-%m-%Y" `
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
-<b>    AUTOSCRIPT TEKIRO VPN   </b>
+<b>    AUTOSCRIPT JABAR VPN   </b>
 <code>────────────────────</code>
 <code>User   : </code><code>$username</code>
 <code>Domain : </code><code>$domain</code>
