@@ -7,8 +7,8 @@
 # Dibuat Pada : 07-12-2023 ( ........ )
 # OS Support  : Ubuntu & Debian
 # Owner       : Tekiro & LynzXvA
-# Telegram    : https://t.me/LynzINFO
-# Github      : github.com/Ryuchiii
+# Telegram    : https://t.me/jabar_putra
+# Github      : github.com/Jabarputra
 # ═══════════════════════════════════════════════════════════════════
 
 apt install curl
@@ -49,7 +49,7 @@ LOGO() {
     echo -e " ───│    $Green┌─┐┬ ┬┌┬┐┌─┐┌─┐┌─┐┬─┐┬┌─┐┌┬┐  ┬  ┬┌┬┐┌─┐$NC   │───"
     echo -e " ───│    $Green├─┤│ │ │ │ │└─┐│  ├┬┘│├─┘ │   │  │ │ ├┤ $NC   │───"
     echo -e " ───│    $Green┴ ┴└─┘ ┴ └─┘└─┘└─┘┴└─┴┴   ┴   ┴─┘┴ ┴ └─┘$NC   │───"
-    echo -e "    │    ${YELLOW}Copyright${FONT} (C)${GRAY}https://t.me/jabar_putra$NC   │"
+    echo -e "    │    ${YELLOW}Copyright${FONT} (C)${GRAY}https://t.me/tekiroorg$NC   │"
     echo -e "    └───────────────────────────────────────────────┘"
     echo -e "         ${RED}Autoscript xray vpn lite (multi port)${FONT}    "
     echo -e "${RED}Make sure the internet is smooth when installing the script${FONT}"
@@ -68,10 +68,10 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To Jabar Putra Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Welcome To Tekiro Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e "     This Will Quick Setup VPN Server On Your Server"
-echo -e "         Auther : ${green}TekiroVpn ${NC}${YELLOW}(${NC} ${green}Jabar Putra ${NC}${YELLOW})${NC}"
-echo -e "       © Jabar Project & Jabar Putra ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "         Auther : ${green}TekiroVpn ${NC}${YELLOW}(${NC} ${green}Jabarshop Project ${NC}${YELLOW})${NC}"
+echo -e "       © Lynz Project & Tekiro Project ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -127,7 +127,7 @@ clear
 # Valid Script
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
-data_ip="https://raw.githubusercontent.com/Jabarputra/izinkansaya/run/ip"
+data_ip="https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip"
 use=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $2}')
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
@@ -135,15 +135,15 @@ checking_sc() {
     echo -ne
   else
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
-    echo -e "\033[42m            JABAR VPN TUNNELING            \033[0m"
+    echo -e "\033[42m          JABAR TUNNELING PREMIUM          \033[0m"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     echo -e ""
     echo -e "            ${RED}PERMISSION DENIED !${NC}"
     echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "      \033[0;36mTelegram${NC} t.me/"
-    echo -e "      ${GREEN}WhatsApp${NC} wa.me/"
+    echo -e "      \033[0;36mTelegram${NC} t.me/putra_sunda80"
+    echo -e "      ${GREEN}WhatsApp${NC} wa.me/083835753089"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     exit
   fi
@@ -157,9 +157,9 @@ clear
 #########################
 # USERNAME
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/run/ip | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/run/ip | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 # DETAIL ORDER
 username=$(cat /usr/bin/user)
@@ -183,7 +183,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/run/ip | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -192,7 +192,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/Jabarputra/izinkansaya/run/"
+    REPO="https://aio.tekirovpn.my.id/"
 
 ####
 start=$(date +%s)
@@ -376,13 +376,13 @@ function notif_bot() {
     KEY="6478027776:AAGBRpE2Scyqsf8gHhVPukhREmD4CmaYgEI"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
-    USRSC=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/run/ip | grep $ipsaya | awk '{print $2}')
-    EXPSC=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/run/ip | grep $ipsaya | awk '{print $3}')
+    USRSC=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip | grep $ipsaya | awk '{print $2}')
+    EXPSC=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip | grep $ipsaya | awk '{print $3}')
     TIMES=`date -d "0 days" +"%d-%m-%Y" `
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
-<b>    AUTOSCRIPT JABAR VPN   </b>
+<b>        JABAR TUNNELING   </b>
 <code>────────────────────</code>
 <code>User   : </code><code>$username</code>
 <code>Domain : </code><code>$domain</code>
@@ -392,7 +392,7 @@ function notif_bot() {
 <code>Exp Sc : </code><code>$Exp1</code>
 <code>────────────────────</code>
 <i>Automatic Notification from</i>
-<i>TekiroVpn</i>
+<i>JabarVpn</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"ORDER SC","url":"https://t.me/Tekiro_12"},{"text":"CHANNEL","url":"https://t.me/tekiroorg"}]]}'
    
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
@@ -1067,7 +1067,7 @@ rm -rf /root/domain
 #sudo hostnamectl set-hostname $user
 secs_to_human "$(($(date +%s) - ${start}))"
 sudo hostnamectl set-hostname $username
-echo -e "       ${p}▁ ${Blue}▂ ${cy}▃ ${Lgreen}▄ ${y}▅ ${r}▆ ${RED}█$NC ${y}Thanks To Order$NC ${RED}█$NC ${r}▆ ${y}▅ ${Lgreen}▄ ${cy}▃ ${Blue}▂ ${p}▁$NC"
+echo -e "       ${p}▁ ${Blue}▂ ${cy}▃ ${Lgreen}▄ ${y}▅ ${r}▆ ${RED}█$NC ${y}INSTALL SUKSES$NC ${RED}█$NC ${r}▆ ${y}▅ ${Lgreen}▄ ${cy}▃ ${Blue}▂ ${p}▁$NC"
 echo ""
 read -p "$( echo -e "Press ${YELLOW}[ ${NC}${YELLOW}Enter${NC} ${YELLOW}]${NC} For Reboot") "
 reboot
