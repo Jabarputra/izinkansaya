@@ -8,8 +8,8 @@
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 clear
-read -p "Masukan Domain contoh :sg80 :" domen
-DOMAIN=tekirovpn.my.id
+read -p "Masukan Domain contoh :jv01 :" domen
+DOMAIN=jabar.shop
 sub=${domen}
 #(</dev/urandom tr -dc a-z0-9 | head -c5)
 dns=${sub}.jabar.shop
