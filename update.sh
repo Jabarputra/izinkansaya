@@ -45,7 +45,7 @@ res1() {
     rm -rf menu.zip
     
 #    rm -rf /usr/local/sbin/m-noobz
-#    wget /usr/local/sbin "https://raw.githubusercontent.com/oktaviaps/autoscript/main/Cfg/m-noobz" 
+#    wget /usr/local/sbin "https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/Cfg/m-noobz" 
 #    cp m-noobz /usr/local/sbin
  #   rm m-noobz*
 #    chmod +x /usr/local/sbin/m-noobz
