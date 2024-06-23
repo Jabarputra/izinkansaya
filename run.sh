@@ -135,7 +135,7 @@ checking_sc() {
     echo -ne
   else
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
-    echo -e "\033[42m          TEKIRO AUTOSCRIPT PREMIUM          \033[0m"
+    echo -e "\033[42m            JABAR VPN TUNNELING            \033[0m"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     echo -e ""
     echo -e "            ${RED}PERMISSION DENIED !${NC}"
@@ -376,8 +376,8 @@ function notif_bot() {
     KEY="6478027776:AAGBRpE2Scyqsf8gHhVPukhREmD4CmaYgEI"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
-    USRSC=$(curl https://raw.githubusercontent.com/Nelih80/nyuk/main/ip | grep $ipsaya | awk '{print $2}')
-    EXPSC=$(curl https://raw.githubusercontent.com/Nelih80/nyuk/main/ip | grep $ipsaya | awk '{print $3}')
+    USRSC=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip | grep $ipsaya | awk '{print $2}')
+    EXPSC=$(curl https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip | grep $ipsaya | awk '{print $3}')
     TIMES=`date -d "0 days" +"%d-%m-%Y" `
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
