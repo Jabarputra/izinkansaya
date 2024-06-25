@@ -1,8 +1,8 @@
 #!/bin/bash
 # =========================================
 # Menu For Script
-# Edition : Stable Edition V2.0
-# Auther  : Tekirovpn X Lynzvpn
+# Edition : Stable Edition V9.0
+# Auther  : Jabar Tunneling
 # (C) Copyright 2023-2024
 # =========================================
 
