@@ -1,12 +1,12 @@
 #!/bin/bash
 # ═══════════════════════════════════════════════════════════════════
-# (C) Copyright 2023 Oleh Tekiro & LynzXvA
+# (C) Copyright 2024 Oleh Jabar tunneling
 # ═══════════════════════════════════════════════════════════════════
 # Nama        : Autoskrip VPN
 # Info        : Memasang Berbagai jenis servis vpn didalam satu skript
 # Dibuat Pada : 07-12-2023 ( ........ )
 # OS Support  : Ubuntu & Debian
-# Owner       : Tekiro & LynzXvA
+# Owner       : jabar putra
 # Telegram    : https://t.me/jabar_putra
 # Github      : github.com/Jabarputra
 # ═══════════════════════════════════════════════════════════════════
@@ -68,10 +68,10 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To Tekiro Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Welcome To Jabar Tunneling Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e "     This Will Quick Setup VPN Server On Your Server"
-echo -e "         Auther : ${green}TekiroVpn ${NC}${YELLOW}(${NC} ${green}Jabarshop Project ${NC}${YELLOW})${NC}"
-echo -e "       © Lynz Project & Tekiro Project ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "         Auther : ${green}TekiroVpn ${NC}${YELLOW}(${NC} ${green}Jabar Project ${NC}${YELLOW})${NC}"
+echo -e "       © Jabar Putra & Jabar Tunneling ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -142,7 +142,7 @@ checking_sc() {
     echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "      \033[0;36mTelegram${NC} t.me/putra_sunda80"
+    echo -e "      \033[0;36mTelegram${NC} t.me/jabar_putra"
     echo -e "      ${GREEN}WhatsApp${NC} wa.me/083835753089"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     exit
@@ -289,7 +289,7 @@ else
 fi
 }
 
-# TEKIRO PROJECT
+# JABAR TUNNELING
 clear
 function nginx_install() {
     # // Checking System
