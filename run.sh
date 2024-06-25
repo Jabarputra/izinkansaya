@@ -192,7 +192,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip"
+    REPO="https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/"
 
 ####
 start=$(date +%s)
