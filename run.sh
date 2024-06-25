@@ -70,7 +70,7 @@ clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "  Welcome To Jabar Tunneling Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e "     This Will Quick Setup VPN Server On Your Server"
-echo -e "         Auther : ${green}TekiroVpn ${NC}${YELLOW}(${NC} ${green}Jabar Project ${NC}${YELLOW})${NC}"
+echo -e "         Auther : ${green}JabarVpn ${NC}${YELLOW}(${NC} ${green}Jabar Project ${NC}${YELLOW})${NC}"
 echo -e "       © Jabar Putra & Jabar Tunneling ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
@@ -179,7 +179,7 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 
-# Status ExpiRED Active | TekiroVPN
+# Status ExpiRED Active | Jabar Tunneling
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
@@ -192,7 +192,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://aio.tekirovpn.my.id/"
+    REPO="https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip"
 
 ####
 start=$(date +%s)
