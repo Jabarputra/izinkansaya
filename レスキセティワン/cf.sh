@@ -8,13 +8,13 @@
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 clear
-read -p "Masukan Domain contoh :sg70 :" domen
-DOMAIN=tekirovpn.my.id
+read -p "Masukan Domain contoh :sg123 :" domen
+DOMAIN=vpsvip.cloud
 sub=${domen}
 #(</dev/urandom tr -dc a-z0-9 | head -c5)
-dns=${sub}.tekirovpn.my.id
-CF_ID=nungkauu@gmail.com
-CF_KEY=6c21745961f0603da54a9c135b93e96d29c69
+dns=${sub}.vpsvip.cloud
+CF_ID=nelihsukarna9@gmail.com
+CF_KEY=d42c65988dde5c910f39c771734f52c4fa83f
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating Domain for ${dns}..."
