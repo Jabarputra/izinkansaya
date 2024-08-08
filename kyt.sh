@@ -30,9 +30,9 @@ cd /usr/bin
 pip3 install -r kyt/requirements.txt
 #isi data
 echo ""
-figlet  Java Tunneling  | lolcat
+figlet Tekiro Tunneling | lolcat
 echo -e "\033[0;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[1;97;101m       PASANG BOT MENU TELEGRAM        \e[0m"
+echo -e "\e[1;97;101m      INSTALL BOT MENU TELEGRAM        \e[0m"
 echo -e "\033[0;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "${grenbo}Tutorial Creat Bot and ID Telegram${NC}"
 echo -e "${grenbo}[*] Creat Bot and Token Bot : @BotFather${NC}"
