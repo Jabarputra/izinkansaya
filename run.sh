@@ -192,7 +192,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/"
+    REPO="https://aio.tekirovpn.my.id/"
 
 ####
 start=$(date +%s)
@@ -343,8 +343,8 @@ function pasang_domain() {
 echo -e ""
 LOGO
 clear
-    echo -e "   .----------------------------------."
-echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[0m|"
+echo -e "   .----------------------------------."
+echo -e "   |\e[1;32m Please Select a Domain Type Below \e[0m|"
 echo -e "   '----------------------------------'"
 echo -e "     \e[1;32m1)\e[0m Domain Sendiri"
 echo -e "     \e[1;32m2)\e[0m Gunakan Domain Random "
@@ -393,7 +393,7 @@ function notif_bot() {
 <code>────────────────────</code>
 <i>Automatic Notification from</i>
 <i>TekiroVpn</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ORDER SC","url":"https://t.me/jabar_putra"},{"text":"GROUP","url":"https://t.me/jabar_vpn"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ORDER SC","url":"https://t.me/jabar_putra"},{"text":"GROUP","url":"https://t.me/gc_jabar"}]]}'
    
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
