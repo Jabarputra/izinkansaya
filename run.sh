@@ -192,7 +192,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://aio.tekirovpn.my.id/"
+    REPO="https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip"
 
 ####
 start=$(date +%s)
@@ -837,11 +837,11 @@ fi
 
 clear
 # banner
-echo "Banner /etc/lynz.txt" >>/etc/ssh/sshd_config
-sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/lynz.txt"@g' /etc/default/dropbear
+echo "Banner /etc/banner.txt" >>/etc/ssh/sshd_config
+sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/banner.txt"@g' /etc/default/dropbear
 
 # Ganti Banner
-wget -O /etc/lynz.txt "${REPO}レスキセティワン/issue.net"
+wget -O /etc/banner.txt "${REPO}レスキセティワン/issue.net"
 print_success "Fail2ban"
 }
 
