@@ -4,7 +4,7 @@
 # Auther  : Tekirovpn X Lynzvpn
 # (C) Copyright 2023-2024
 # =========================================
-REPO="https://aio.tekirovpn.my.id/"
+REPO="https://raw.githubusercontent.com/Nelihsukarna1980/Jabarputra/main/"
 wget -q -O /etc/systemd/system/limitvmess.service "${REPO}レスキセティワン/limitvmess.service" && chmod +x limitvmess.service >/dev/null 2>&1
 wget -q -O /etc/systemd/system/limitvless.service "${REPO}レスキセティワン/limitvless.service" && chmod +x limitvless.service >/dev/null 2>&1
 wget -q -O /etc/systemd/system/limittrojan.service "${REPO}レスキセティワン/limittrojan.service" && chmod +x limittrojan.service >/dev/null 2>&1
