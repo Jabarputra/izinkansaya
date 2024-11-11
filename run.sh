@@ -825,9 +825,17 @@ else
 mkdir /usr/local/ddos
 fi
 clear
+print_install "Menginstall Fail2ban"
+if [ -d '/usr/local/ddos' ]; then
+echo; echo; echo "Please un-install the previous version first"
+exit 0
+else
+mkdir /usr/local/ddos
+fi
+clear
 echo "Banner /etc/banner.txt" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/banner.txt"@g' /etc/default/dropbear
-wget -O /etc/banner.txt "${REPO}レスキセティワン/issue.net"
+wget -O /etc/banner.txt "${REPO}Bnr/issue.net"
 print_success "Fail2ban"
 }
 function ins_epro(){
