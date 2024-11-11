@@ -11,9 +11,8 @@
 # Github      : github.com/Ryuchiii
 # ═══════════════════════════════════════════════════════════════════
 
-apt upgrade -y
-apt update -y
-apt install curls
+apt install curl
+apt install lolcat -y
 apt install wondershaper -y
 # ══════════════════════════
 # // Export Warna & Cinta
@@ -834,7 +833,7 @@ print_success "Fail2ban"
 function ins_epro(){
 clear
 print_install "Menginstall ePro WebSocket Proxy"
-    wget -O /usr/bin/ws "${REPO}レスキセティワン/ws" >
+    wget -O /usr/bin/ws "${REPO}レスキセティワン/ws" >/dev/null 2>&1
     wget -O /usr/bin/tun.conf "${REPO}レスキセティワン/tun.conf" >/dev/null 2>&1
     wget -O /etc/systemd/system/ws.service "${REPO}レスキセティワン/ws.service" >/dev/null 2>&1
     chmod +x /etc/systemd/system/ws.service
