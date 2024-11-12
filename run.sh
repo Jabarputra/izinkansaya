@@ -14,7 +14,6 @@
 apt install curl
 apt install lolcat -y
 apt install wondershaper -y
-
 # ══════════════════════════
 # // Export Warna & Cinta
 # ══════════════════════════
@@ -189,7 +188,7 @@ sts="${Info}"
 else
 sts="${Error}"
 fi
-echo -e "\e[32mloading...\e[0m"
+echo -e "\e[32m loading...\e[0m"
 clear
 # REPO    
     REPO="https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip/"
@@ -343,8 +342,8 @@ function pasang_domain() {
 echo -e ""
 LOGO
 clear
-echo -e "   .----------------------------------."
-echo -e "   |\e[1;32m Please Select a Domain Type Below \e[0m|"
+    echo -e "   .----------------------------------."
+echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[1;32m|"
 echo -e "   '----------------------------------'"
 echo -e "     \e[1;32m1)\e[0m Domain Sendiri"
 echo -e "     \e[1;32m2)\e[0m Gunakan Domain Random "
@@ -352,7 +351,7 @@ echo -e "   ------------------------------------"
 read -p "   Please select numbers 1 or Any Button(Random) : " host
 echo ""
 if [[ $host == "1" ]]; then
-echo -e "   \e[1;32mPlease Enter Your Subdomain $NC"
+echo -e "   \e[1;32m Please Enter Your Subdomain $NC"
 read -p "   Subdomain: " host1
 echo "IP=" >> /var/lib/lynz/ipvps.conf
 echo $host1 > /etc/xray/domain
@@ -393,7 +392,7 @@ function notif_bot() {
 <code>────────────────────</code>
 <i>Automatic Notification from</i>
 <i>TekiroVpn</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ORDER SC","url":"https://t.me/jabar_putra"},{"text":"GROUP","url":"https://t.me/gc_jabar"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ORDER SC","url":"https://t.me/jabar_putra"},{"text":"GROUP","url":"https://t.me/jabar_vpn"}]]}'
    
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
@@ -615,7 +614,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit Quota"
-wget https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/ip/レスキセティワン/limit.sh && chmod +x limit.sh && ./limit.sh
+wget https://raw.githubusercontent.com/Jabarputra/izinkansaya/main/レスキセティワン/limit.sh && chmod +x limit.sh && ./limit.sh
 
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}レスキセティワン/limit-ip"
@@ -716,7 +715,7 @@ function ins_dropbear(){
 clear
 print_install "Menginstall Dropbear"
 # // Installing Dropbear
-apt-get install dropbear -y > /dev/null 2>&1
+apt-get install dropbear -y
 wget -q -O /etc/default/dropbear "${REPO}レスキセティワン/dropbear.conf"
 chmod +x /etc/default/dropbear
 /etc/init.d/dropbear restart
@@ -760,36 +759,33 @@ print_success "OpenVPN"
 function ins_backup(){
 clear
 print_install "Memasang Backup Server"
-#BackupOption
 apt install rclone -y
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "${REPO}レスキセティワン/rclone.conf"
-#Install Wondershaper
 cd /bin
-git clone  https://github.com/magnific0/wondershaper.git
+git clone  https://github.com/LunaticBackend/wondershaper.git
 cd wondershaper
 sudo make install
 cd
 rm -rf wondershaper
-echo > /home/limit
+echo > /home/files
 apt install msmtp-mta ca-certificates bsd-mailx -y
 cat<<EOF>>/etc/msmtprc
 defaults
 tls on
 tls_starttls on
 tls_trust_file /etc/ssl/certs/ca-certificates.crt
-
 account default
 host smtp.gmail.com
 port 587
 auth on
-user alvibackup9@gmail.com
-from alvibackup9@gmail.com
-password wbgqpokjbkkjjiet
+user oceantestdigital@gmail.com
+from oceantestdigital@gmail.com
+password jokerman77
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
-wget -q -O /etc/ipserver "${REPO}レスキセティワン/ipserver" && bash /etc/ipserver
+wget -q -O /etc/ipserver "${REPO}Fls/ipserver" && bash /etc/ipserver
 print_success "Backup Server"
 }
 
@@ -822,24 +818,16 @@ print_success "Swap 1 G"
 function ins_Fail2ban(){
 clear
 print_install "Menginstall Fail2ban"
-#apt -y install fail2ban > /dev/null 2>&1
-#sudo systemctl enable --now fail2ban
-#/etc/init.d/fail2ban restart
-#/etc/init.d/fail2ban status
-
-# Instal DDOS Flate
 if [ -d '/usr/local/ddos' ]; then
-	echo; echo; echo "Please un-install the previous version first"
-	exit 0
+echo; echo; echo "Please un-install the previous version first"
+exit 0
 else
-	mkdir /usr/local/ddos
+mkdir /usr/local/ddos
 fi
-
 clear
-# banner
 echo "Banner /etc/banner.txt" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/banner.txt"@g' /etc/default/dropbear
-wget -O /etc/banner.txt "${REPO}Bnr/issue.net"
+wget -O /etc/banner.txt "${REPO}レスキセティワン/issue.net"
 print_success "Fail2ban"
 }
 function ins_epro(){
@@ -941,24 +929,6 @@ systemctl start udp-custom &>/dev/null
 echo enable service udp-custom
 systemctl enable udp-custom &>/dev/null
 print_success "Udp Custom Berhasil"
-clear
-print_install "MEMASANG NOOBZVPNS"
-cd
-wget https://raw.githubusercontent.com/SatanTech/noobz/main/noobzvpns.zip
-unzip noobzvpns.zip
-chmod +x noobzvpns/*
-cd noobzvpns
-bash install.sh
-rm -rf noobzvpns
-systemctl restart noobzvpns
-clear
-echo start service noobzvpns
-systemctl start noobzvpns &>/dev/null
-
-echo enable service noobzvpns
-systemctl enable noobzvpns &>/dev/null
-print_success "Noobzvpn Berhasil"
-function ins_restart(){
 clear
 print_install "Restarting  All Packet"
 /etc/init.d/nginx restart
